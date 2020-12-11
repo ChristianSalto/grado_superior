@@ -1,0 +1,26 @@
+body {
+  margin: 5%;
+}
+
+main {
+  margin: 2%;
+}
+
+form {
+  display: grid;
+}
+
+input {
+  height: 20px;
+  margin: 1%;
+  padding: 10px;
+}
+
+li {
+  margin: 1%;
+}
+
+.submit {
+  cursor: pointer;
+  height: 40px;
+}
