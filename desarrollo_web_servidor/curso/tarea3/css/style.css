@@ -1,0 +1,44 @@
+body {
+  background: #24dafa;
+  margin-top: 5%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.card {
+  margin-left: 13%;
+  width: 70%;
+}
+
+.card-header {
+  text-align: center;
+  padding: 2%;
+}
+
+.card-title {
+  text-align: center;
+  padding: 2%;
+}
+
+.div-volver {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.text-area {
+  padding: 1.5%;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+.alert {
+  margin: 5%;
+}
