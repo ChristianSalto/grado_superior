@@ -21,15 +21,21 @@
       </thead>
       <tbody>
         <?php foreach ($result as $fila) { ?>
-          <tr>
-            <td><a href="detalle.php?id=<?php echo $fila['id']; ?>"><button type="button" class="btn btn-primary">Detalle</button></a></td>
-            <td><?php echo $fila['id']; ?></td>
-            <td><?php echo $fila['nombre']; ?></td>
-            <td>
-              <a href="update.php?id=<?php echo $fila['id']; ?>"><button type=" button" class="btn btn-warning">Actualizar</button></a>
-              <a href="borrar.php?id=<?php echo $fila['id']; ?>"><button type=" button" class="btn btn-danger">Borrar</button></a>
-            </td>
-          </tr>
+          <form action="borrar.php">
+            <tr>
+              <td><a href="detalle.php?id=<?php echo $fila['id']; ?>"><button type="button" class="btn btn-primary">Detalle</button></a></td>
+              <td><?php echo $fila['id']; ?></td>
+              <td><?php echo $fila['nombre']; ?></td>
+              <td>
+                <a href="update.php?id=<?php echo $fila['id']; ?>"><button type="button" class="btn btn-warning">Actualizar</button></a>
+                <button type="submit" class="btn btn-danger" name="submit" value="<?php echo $fila['id']; ?>">Borrar</button>
+                <!-- <a href="borrar.php?id=<?php //echo $fila['id']; 
+                                            ?>">
+                <button type="button" class="btn btn-danger">Borrar</button>
+              </a> -->
+              </td>
+            </tr>
+          </form>
         <?php } ?>
       </tbody>
     </table>

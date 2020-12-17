@@ -2,6 +2,10 @@
 <header>
   <?php
 
+  // Con esta funcion -> isset() podremos comprobar si una variable esta definida y con el operador ternario en base 
+  // a la comprobacion si es true sacara un titulo y si es false el otro,
+  // basicamente como al actualizar necesitamos pasar el id, pues yo lo aprovecho para crear esta sentecia de control y
+  // mostrar una cosa o la otra.
   echo isset($_GET['id']) ? "<h1>Modificar Producto</h1>" : "<h1>Crear producto</h1>";
 
   ?>
@@ -31,15 +35,15 @@
           <label for="familia">Familia</label>
           <select class="form-control" id="familia" name="family" required>
             <option selected="true" disabled="disabled"><?php echo $result[0]['familia']; ?> </option>
-            <option>Camaras</option>
-            <option>Consolas</option>
-            <option>Equipos multifuncion</option>
-            <option>Ordenadores</option>
-            <option>Reproductores MP3</option>
-            <option>Televisores</option>
-            <option>Software</option>
-            <option>Libros Electronicos</option>
-            <option>Routers</option>
+            <option value="Camaras">Camaras</option>
+            <option value="Consolas">Consolas</option>
+            <option value="Equipos multifuncion">Equipos multifuncion</option>
+            <option value="Ordenadores">Ordenadores</option>
+            <option value="Reproductores MP3">Reproductores MP3</option>
+            <option value="Televisores">Televisores</option>
+            <option value="Software">Software</option>
+            <option value="Libros Electronicos">Libros Electronicos</option>
+            <option value="Routers">Routers</option>
           </select>
         </div>
       </div>

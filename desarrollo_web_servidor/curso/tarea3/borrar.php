@@ -2,7 +2,7 @@
 
 
 <?php
-$id = $_GET['id'];
+$id = $_GET['submit'];
 $sql = $con->prepare("DELETE FROM productos WHERE id = '$id'");
 $sql->execute();
 
@@ -16,4 +16,3 @@ if ($sql->execute()) {
 };
 ?>
 
-<strong></strong>
